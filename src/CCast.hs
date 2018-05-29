@@ -32,7 +32,7 @@ import Bit64Only
 --   to prevent from having to think about numeric conversions.
 --   Type inference is still weak here; I recommend two solutions:
 --
---   With -XTypeApplications
+--   With -XTypeApplications:
 --
 -- @
 -- cast \@\CChar \@\Int8 x -- convert x from CChar to Int8
@@ -41,7 +41,7 @@ import Bit64Only
 --   With explicit type annotations:
 --
 -- @
--- cast x :: Int8 -- convert x from CChar to Int8
+-- cast x :: Int8      -- convert x from CChar to Int8
 -- @
 --
 class Cast a b where
